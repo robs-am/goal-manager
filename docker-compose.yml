@@ -1,0 +1,11 @@
+name: goal-manager-server
+
+services:
+  pg:
+    image: bitnami/postgresql:13.16.0
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRESQL_USERNAME=docker    # Corrigido para a imagem bitnami
+      - POSTGRESQL_PASSWORD=docker    # Corrigido para a imagem bitnami
+      - POSTGRESQL_DATABASE=goal_manager  # Corrigido para a imagem bitnami
