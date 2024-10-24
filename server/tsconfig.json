@@ -6,6 +6,7 @@
     "lib": ["es2023"],
     "module": "ESNext",
     "target": "es2022",
+    "typeRoots": ["./types", "./node_modules/@types"],
 
     "strict": true,
     "esModuleInterop": true,
